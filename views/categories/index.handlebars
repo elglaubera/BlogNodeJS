@@ -1,0 +1,10 @@
+<h3>Categories: </h3>
+<hr>
+{{#each categories}}
+  <a href="/categories/{{slug}}">
+    <h4>{{name}}</h4>
+  </a>
+{{else}}
+{{/each}}
+<hr>
+<a href="/admin/categories/add"><button class="btn btn-success">New category</button></a>
